@@ -13,23 +13,27 @@ import java.util.Scanner;
 
 public class Calcularperimetro {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        //Entrada de datos por teclado
+        Scanner teclado = new Scanner(System.in);
         
+        //Preguntamos los datos al usuario
         
-        //Pedimos la entrada de datos por consola
-        System.out.print("Ingrese la longitud del lado del cuadrado (a): ");
-        double lado = scanner.nextDouble();
+        System.out.print("Ingrese el lado 1: ");
+        double lado1 = teclado.nextDouble();
         
-        //Hacemos las operaciones matematicas 
-        double perimetro = 4 * lado;
-        double area = Math.pow(lado, 2);
+        System.out.print("Ingrese el lado 2: ");
+        double lado2 = teclado.nextDouble();
         
-        //Mostramos los resultados por consla 
-        System.out.println("---------------------------------");
-        System.out.println("         Resultados");
-        System.out.println(" El perímetro es:" + perimetro);
-        System.out.println("El area es: " + area);
+        System.out.print("Ingrese el lado 3: ");
+        double lado3 = teclado.nextDouble();
         
-        scanner.close();
+        //Calculamos la longitud de los tres lados usando la formula P = lado1 + lado2 + lado3 
+        
+        double perimetro = lado1 + lado2 + lado3;
+        
+        //Salida
+         System.out.print("El perimetro del lado es: "+ perimetro);
+       
     }
 }
+ 
