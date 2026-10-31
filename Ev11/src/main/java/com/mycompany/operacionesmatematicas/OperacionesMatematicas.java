@@ -20,25 +20,29 @@ public class OperacionesMatematicas {
         
         //Pedimos los datos a usar para las operaciones matematicas
         System.out.print("Ingrese el primer numero a usar en las operaciones: ");
-        double a = teclado.nextDouble();
+        int a = teclado.nextInt();
         
         System.out.print("Ingrese el segundo numero para usar en las operaciones: ");
-        double b = teclado.nextDouble();
+        int b = teclado.nextInt();
         
         //Hacemos las operaciones matemáticas con los numeros obtenidos 
         
-           double  suma = a + b ; 
-           double resta = a - b ;
-           double multiplicacion = a * b;
-           double division = a / b;
-        
-   
-        
-        //Mostramos los resultados en consola
+           int suma = a + b ; 
+           int resta = a - b ;
+           int multiplicacion = a * b;
+          
+           
+            //Mostramos los resultados en consola
         System.out.println("El resultado de la suma es: "+ suma);
         System.out.println("El resultado de la resta es: " + resta);
         System.out.println("El resultado de la multiplicacion es: " + multiplicacion);
-        System.out.println("El resultado de la division es: "+ division);
-        
+           
+           //Condicional 
+           if (b!= 0) {
+               System.out.print("El resultado es:"+ (a/b));
+           }
+           else {
+               System.out.println("No se puede dividir entre cero");
+           }
     }
 }
